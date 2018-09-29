@@ -1,0 +1,33 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    border: 2px solid   rgb(150, 150, 150); 
+    width : 820px;
+    margin :50px auto;
+    padding: 20px;
+}
+
+ hr{
+     border: 1px solid  rgb(150, 150, 150);    
+ }
+
+.back {
+    background-color:  rgb(150, 150, 150);
+    padding: 7px; 
+} 
+
+.exo {
+    background-color: green;
+    padding : 5px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: disc;
+}

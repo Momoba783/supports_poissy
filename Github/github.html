@@ -1,0 +1,63 @@
+<!-- 1- présentation Github
+     1.1- de Github
+     plateforme collaborative pour dév, plus grand espace de stockage de travaux collaboratif dans le monde !
+     Github en lui-même n'est rien de plus qu'un réseau social comme Facebook.
+     Vous construisez un profil, vous y déposez des projets à partager et vous vous connectez avec d'autres utilisateurs 
+     en suivant leurs comptes. Même si la plupart des utilisateurs y déposent des projets de programmes ou de code, rien ne vous empêche 
+     d'y placer des textes ou tout types de fichiers à présenter dans vos répertoires de projets.
+     1.2 - de Github
+     Git est un logiciel de contrôle de version, ce qui signifie qu'il gère les modifications d'un projet sans écraser n'importe quelle partie du projet.
+
+2- Lexique de Git et Github
+     2.1 Vocabulaire
+        *ligne de commande* : le programme de l'ordinateur que nous utilisons pour entrer des commandes Git. sur Mac on parle de Terminal et sur PC c'est un 
+        programme non-natif que vous téléchargez lorque vous téléchargez Git pour la première fois.
+        *Dépot* : Un répertoire ou de l'espace de stockage où vos projets peuvent vivre. les utilisateurs de Github raccourcissent ça en "repo" pour "repository". Il peut être
+        en local sur un répertoire de votre ordinateur, ou ce peut être un espace de stockage sur Github ou un autre hébergeur en ligne. A l'interieur d'un dépot, vous pouvez
+        conserver des fichiers de codes, des fichiers textes, des images.
+        *Contrôle de version* : Fondamentalement, l'objectif pour lequel Git a été conçu. Quand vous avez un fichier Word, vous l'écrasez à chaque fois que vous sauvegardez plusieurs versions.
+        Avec Git, vous n'êtes plus obligés de faire ça. Git conseve des instantanés de chaque point dans l'historique d'un projet, de sorte que vous ne pouvez jamais le perdre ou l'écraser.
+        *Commit* : c'est la commande qui donne à Git toute sa puissance. quand vous "Committez", vous prenez un "instantané", "une photo" de votre dépot à ce stade, 
+        vous donnant un point de contrôle quevous pouvez ensuite réévaluer ou restaurer votre projet à un état précedent.
+        *Branche* : Comment plusieurs personnes peuvent travailler sur un projet en même temps sans que Git ne s'embrouille ? Habituellement, elle se débranchent 
+        du projet principal avec leurs propres versions complètes, des modifications qu'elles ont chacune produites de leur coté. Après avoir terminé, il est temps de "fusionner"
+        cette branche pour la ramener vers la branche "master", le répertoire principal du projet.
+        
+    2.2 Commandes Spécifiques Git
+    
+    git init : initialise un nouveau dépôt git jusqu'à ce que vous executiez cette commande dans un dépôt ou répertoire, c'est juste un dossier ordinaire. 
+    Seulement après avoir entré cette commande, il accepte les commandes Git qui suivent.
+
+    git config : raccourci de configurer, ceci est tout particulièrement utile quand vous paramétrez Git pour la première fois (id et mp user)
+
+    git help : oublié une commande ? tapez_ça dans la ligne de commande pour afficher les 21 commandes les plus courantes de Git
+
+    git status : vérifie le statut de votre repository. voir quels fichiers sont à l'intéreiur, quelles sont les modifications à commiter et sur quelle 
+    branche ou repo vous êtes entrain de travailler.
+
+    git add : ceci n'ajoute pas de fichiers dans votre repo. Au lieu de cela, ça porte de nouveaux fichiers à l'attention de Git. Après avoir ajouté des 
+    fichiers, ils sont inclus dans les instantanés du dépôt Git.
+
+    git commit : la commande la plus importante de Git. Après avoir effectué toutes sortes de modification, vous entrerez ça afin de prendre 
+    un instantané du dépôt, le mettre en mémoire. On écrit ça sous la forme de git commit -m 'votre message'. Le -m indique que la section suivante
+    de la commande devrait être lue comme un message.
+
+    git branch : Vous travaillez avec plusieurs collaborateurs et vous voulez produire des modifications de votre côté ? cette commande vous permet 
+    de construire une nouvelle branche, ou une chronologie des commits, des modifications et des ajouts de fichiers qui sont complètement les vôtres.
+    votre titre va après la commande. si vous vouliez créer une nouvelle branche appelée chats, vous saisiriez git branch chats.
+    
+    git checkout :c'est une commande de navigation qui vous permet de vous déplacer vesr le répertoire que vous voulez vérifier.
+    Vous pouvez utiliser cette commande sous la forme de git checkout master.
+
+    git merge : Lorsque vous avez fini de travailler sur une branche, vous pouvez fusionner vos modifications vers la branche master, qui est visible pour tous
+    les collaborateurs. git merge chat prendrait toutes les modifications que vous avez apportés à la branche "chats" et les ajoutera àa la branche master.
+
+    git push : si vous travaillez sur votre ordinateur en local et que vous voulez que vos commits soient visibles aussi en ligne sur Github, vous"pushez
+    les modifications vers Github avec cette commande.
+
+    git pull : si vous travaillez en local et que vous voulez la version la plus à jour de votre repository pour travailler dessus, vous "pullez"
+    les modifications provenant de Github avec cette commande.
+    
+    git clone : permet de dupliquer, cloner un dépôt existant sur Github pour l'avoir en local. La commande git clone doit être suivie de l'url 
+    du dépôt correspondant qui se copie depuis Github directement.
+    -->

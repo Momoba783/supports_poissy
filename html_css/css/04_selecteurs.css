@@ -1,0 +1,70 @@
+body{
+    font-size: 25px; /*taille de la police*/
+}
+
+h1 {
+    background-color:#8533ff;
+    color:#fff;
+}
+
+section p{
+    color : #0066ff;/*Tous les <p> à l'interieur de la balise <section>*/
+}
+
+section p:first-child {
+    color: darkslateblue; /*premier p*/
+}
+
+section p:last-child {
+    color: rgb(52, 32, 179); /*dernier p*/
+}
+
+section p:nth-child(even){ /*even=pairs*/
+    color : violet;
+}
+
+section p:nth-child(odd){ /*odd= impairs*/
+    color : red;
+}
+
+section p:nth-child(3), p:nth-child(10) {
+    color : orange !important; 
+}
+
+#zone3 { /*"#"car c'est un ID*/
+    background-color:#000;
+    color: #fff;
+    height:100px;
+}
+
+.zone1 { /*"."car c'est une class*/
+    color : #dc143c;
+    background-color: #000;
+    height: 30px;
+}
+
+.zone2 {
+    color : #008080;
+}
+
+.lime {
+    color:#00ff00;
+}
+
+#zone3:after { /* ajouter du contenu après le texte dans la zone ciblée*/
+    content :"Hello tout le monde !"
+}
+
+#zone3:before {
+    content : "rajouté avant";
+    background-color:skyblue;
+}
+
+ul li:nth-child(2){
+    background-color: red;
+    color: #fff;
+}
+
+.zone1:after {
+    content:"salut les gens";
+}

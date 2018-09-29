@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selecteurs</title>
+    <meta name="author" content="Mohamed">
+    <meta name="description" content="cours sur les selecteurs">
+    <link rel="stylesheet" href="css/04_selecteurs.css">
+</head>
+
+<body>
+    <!--h1+section>p*10-->
+    <h1>Titre</h1>
+    <section>
+        <p>1 - Premier paragraphe</p>
+        <p>2 - J'écris toujours</p>
+        <p>3 - Je suis en troisième position</p>
+        <p>4 - Je passe après</p>
+        <p>5 - Je suis là</p>
+        <p>6 - Et encore</p>
+        <p>7 - J'arrive en 7</p>
+        <p>8 - Moi je reste ici</p>
+        <p>9 - A la traîne</p>
+        <p>10 - Et moi en dernier</p>
+    </section>
+
+    <!--Les sélecteurs designent précisémment un ou plusieurs éléments de la page HTML qui sont visés pour leur appliquer un style (mise en forme) précise (tel que couleur, taille et position).
+    Par exemple, nous pouvons vouloir cibler tous les paragraphes d'une page ou seulement un paragraphe spécifique.-->
+    <section>
+        <h3>Les balises HTML</h3>
+        <p>Les <strong>sélecteurs de type</strong> ciblent les élements de la page HTML par les balises. Par exemple si nous voulons cibler tous nos titres de niveau &lt;h4> de la page HTML, nous utiliserons le sélecteur de type h4
+        </p>
+            <p>HTML :<br>
+                &lt;h4>Bonjour à tous&lt;/h4><br>
+                &lt;h4>Bye tout le monde&lt;/h4><br>
+
+                CSS :<br>
+                h4 { <br>
+                    ...<br>
+                }<br>
+            </p>
+
+            <p>les <strong>sélécteurs de classe</strong> permettent de cibler un élément en fonction de la valeur de l'attribut <em>class</em> attaché à cet élément. Les sélecteurs de class permettent d'avantage de précision car ils permettent de cibler les éléments d'un groupe ayant une classe identique plutôt toutes les balises HTML de la page.
+            Les sélecteurs de classe permettent d'appliquer la même mise en forme en attribuant la même valeur dans l'attribut class à différentes balises HTML. En CSS les classes sont appelées avec un point. Ici, le sélecteur de la classe ciblera tout élément contenant la classe dont la valeur est "zone1", y inclut les éléments division et paragraphe.
+            </p>
+            <div class="zone1">Zone 1</div>
+            <div class="zone2">Zone 2<span class="lime">moi je suis vert citron</span></div>
+            <div id="zone3">Je suis dans la zone 3</div>
+            <div class="zone4">Zone 4<span>44444444</span></div>
+            <div class="zone5">
+                <ul>
+                    <li>Zone 5 - 1</li>
+                    <li>Zone 5 - 2</li>
+                    <li>Zone 5 - 3</li>
+                </ul>
+            </div>
+
+            <p>Les <strong>Sélecteur d'ID</strong> sont encore plus précis que les sélecteurs de class, puisqu'ils ciblent un éléments unique. Tout comme les sélecteurs de class utilisent la valeur d'une class présente dans le HTML, les sélecteurs d'ID utilisent l'attribut ID. <br><br>
+            
+        ▲ ▲ ▲ Attention ! 
+        Très important : peu importe la balise dans la quelle ils sont insérés, la valeur des attributs ID ne peuvent être utilisés qu'une seule fois dans un fichier HTML. C'est pourquoi les ID sont reservés pour les éléments significatifs.<br>
+        En CSS, les ID sont appelés avec un dièse (ou hashtag). Ici le selecteur d'ID ciblera uniquement l'élement HTML qui possède un attribut ID dont la valeur est "zone3"</p>
+
+    </section>
+
+    
+</body>
+</html>

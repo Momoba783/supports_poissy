@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Mohamed Ba">
+    <meta name="description" content="Mon premier formulaire HTML">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/03_formulaire.css">
+</head>
+
+<body>
+    <!--Je déclare mon formulaire avec la balise <form>-->
+    <form>
+        <label for"pseudo">Pseudo</label><!--for est l'identifiant de l'élément de formulaire-->
+        <input type="text" name="pseudo" placeholder="rentrer son pseudo" required><br>
+        <!--input est l'entrée de données dans une base de données-->
+        <!--required indique que le champ doit être renseigné-->
+
+        <!--Le mot de passe-->
+        <label for="MDP">Mot de passe</label>
+        <input type="password" name="MDP" placeholder="rentrer son MDP" required><br>
+
+        <!--email-->
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="email"><br>
+
+        <!--fichier-->
+        <label for="photo">Photo</label>
+        <input type="file" name="photo"><br>
+
+        <!--cases à cocher-->
+        <label for="question">Quelle destination choisissez-vous ?</label>
+        <p>
+            <input type="checkbox" name="question">Chine
+            <!--avec checked on coche une case par défaut-->
+            <input type="checkbox" name="question">Australie
+            <input type="checkbox" name="question">Mars
+        </p>
+        <!--un seul choix, avec les boutons radio, on force l'utilisateur à choisir-->
+        <label for="question">Qui seront vos accompagnateurs ?</label>
+        <p>
+                <input type="radio" name="question02">Mes potes
+                <input type="radio" name="question02">Ma mère
+                <input type="radio" name="question02">Personne
+        </p>
+        
+        <!--zone de texte-->
+        <label for="commentaire">Commentaire</label>
+        <textarea name="commentaire" rows="8" cols="80"></textarea><br>
+        <!--rows = nombre de lignes - cols = nombre de colonnes/caractères-->
+
+        <!--bouton envoi du formulaire-->
+        <input type="submit" name="inscription" value="envoyer">
+
+        <!--bouton pour vider le formumlaire-->
+        <input type="reset" name="annuler" value="annuler">
+    </form>
+    
+</body>
+</html>

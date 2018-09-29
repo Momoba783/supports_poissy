@@ -1,0 +1,54 @@
+/*Commentaires css*/
+
+*{
+    text-align: right
+}
+
+body {
+    background :#f5deb3;
+}
+
+header {
+    background-color: #900c3f;
+    color : #fff;
+    height: 100px;
+}
+/*background-color sert à définir uniquement la couleur du fond de l'élément. Background, lui-même de définir l'ensemble des propriétés de fon de ton élément*/
+
+nav {
+    background-color: #daf7a6;
+    height :60px;
+    color:#900c3f
+}
+
+section {
+    background : navy;
+    height : 550 px;
+}
+
+article {
+    background-color: #ff5733;
+    height:66px;
+}
+
+footer {
+    background-color: #daf7a6;
+    height : 75px; 
+}
+
+nav, footer {
+    color: #a93226:
+}
+
+/*je cible avec un point devant*/
+.jaune {
+    background-color: yellow;
+}
+
+/*je cible avec un dièse devant*/
+#noir {
+    background-color: black;
+    color:#fff;
+    text-align: justify;
+    font-size:25px;
+}

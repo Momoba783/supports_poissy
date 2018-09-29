@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tableaux</title>
+    <meta name="author" content="Mohamed ba">
+    <meta name="description" content="cours sur les tableaux">
+    <link rel="stylesheet" href="css/05_tableaux.css">
+</head>
+
+<body>
+    <!--L'Elément HTML Table
+        Les tableaux en HTML doivent être utilisés pour organiser de façon logique les données.
+        
+        l'élement tr, pour <table row> ou <ligne de tableau> en francais, va nous servir à introduire une ligne dans notre tableau.
+
+        l'élément td, pour <table data> ou <donnée de tableau> en français, va nous permettre d'ajouter des céllules dans nos lignes.    
+    
+    -->
+
+    <!--Ouverture du tableau-->
+    <table>
+        <!--Titre du tableau (cellules fusionnées)-->
+        <caption>Ventes</caption>
+
+        <!--en_tête du tableau-->
+        <thead>
+            <!-- tr = rang (t = tableau / r = row = rangée-->
+            <tr>
+                <th>Jour</th>
+                <th>Smartphone</th>
+                <th>Tablette</th>
+                <th>Portable</th>
+            </tr>
+        </thead>
+        <!--tfoot = bas/fin du tableau /!\ les normes W3C mettent la balise tfoot avant celle du corps du tableau tbody-->
+        <tfoot>
+            <!-- tr = rang (t = tableau / r = row = rangée-->
+            <tr>
+                <td>Total</td>
+                <td>22</td>
+                <td>26</td>
+                <td>24</td>
+                </tr>
+        </tfoot>
+        <!--tbody = corps du tableau-->
+        <tbody>
+            <tr>
+                <td>Lundi</td> <!-- td = cellule-->
+                <td>5</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Mardi</td> <!-- td = cellule-->
+                <td>8</td>
+                <td>9</td>
+                <td>1</td>
+            </tr>
+             <tr>
+                 <td>Mercredi</td> <!-- td = cellule-->
+                 <td>4</td>
+                 <td>5</td>
+                <td>2</td>
+            </tr>
+             <tr>
+                <td>Jeudi</td> <!-- td = cellule-->
+                <td>8</td>
+                <td>5</td>
+                 <td>9</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td> <!-- td = cellule-->
+                <td>8</td>
+                <td>8</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

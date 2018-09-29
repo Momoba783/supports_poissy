@@ -1,0 +1,30 @@
+    body {
+        border: 1px solid #CCC;
+        border-radius: 3px;
+        padding:35px;
+        background-color:#FFF;
+        width: 820px;
+        margin: 50px auto;
+        box-shadow: #555 0 0 5px;
+    }
+
+    h1, h2; h3{
+        color: grey;
+        font-weight: bolder;
+        
+    }
+    hr {
+        border: 1.75px solid #CCC;
+    }
+    ul li {
+        list-style-type: disc;
+    }
+
+    .doc{
+        background: #7878;
+        padding: 20px;
+        border-radius: 3px;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-size: 14px;
+        line-height: 120%;
+    }

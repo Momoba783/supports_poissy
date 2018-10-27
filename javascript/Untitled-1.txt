@@ -1,0 +1,15 @@
+Ecrire une fonction simple qui au clique sur un bouton lance la fonction. Cette fonction demande la saisie d'une largeur, d'une longuer et affiche la surface du rectangle correspondant
+
+<p><button onclick="nomdevotrefonction()">Lancer la fonction</button></p>
+
+1. Créez une fonction qui demande la saisie d'un rayon, retourne la surface du cercle de ce rayon
+2. Affichez le résultat de l'appel à cette fonction en cliquant sur le bouton.
+
+1. Créez deux variables globales a et b, initialisées respectivement à 3 et à 2.
+2. Créez une fonction multiplie prenant un argument x prenant comme valeur par défaut 8, et renvoyant le résultat de la multiplication de x par 3
+3. Créez une fonction affiche, appelée au clic sur le bouton, qui affiche dans des boîtes d'alerte successivement le résultat de multiplie appliquée a, à b, puis sans aucun paramètre (en exécutant donc la fonction avec la valeur de x par défaut)
+
+1. Au click sur le premier bouton, lancez la fonction boucle() qui crée un tableau de 3 en 3 et utilise une boucle for pour le remplir. Affichez le tableau dans une boîte d'alerte.
+
+2.Au click sur le second bouton, lancez la fonction boucle2() qui demande à l'utilisateur via un prompt de saisir la longueur souhaitée du tableau, puis crée ce tableau et utilise une boucle for pour le remplir de sorte que l'élément i du tableau contienne i². Affichez le tableau dans une boîte d'alerte.
+Au click sur le bouton, lancer la fonction jourDeLaSemaine(). Cette fonction détermine le jour de la semaine et affiche selon le cas dimanche, lundi, mardi... etc. jusqu'à samedi.

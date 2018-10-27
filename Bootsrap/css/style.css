@@ -1,0 +1,24 @@
+nav.navbar.bg-primary,
+.bg-primary,
+a.btn-primary,
+.nav-link.active{
+    background-color: #d95700 !important;
+    border-color:#d95700;
+}
+
+a.card-link,
+a.nav-link{
+    color:#d95700
+}
+
+/*on ajoute une couleur de fond sur la page*/
+
+body{
+    background-color: #ededed;
+}
+
+/*le jumbotron de BS*/
+.jumbotron {
+    background-color: #fff;
+    border-top: 3px solid rgb(219,219,219);/*bordure du haut qui donne un effet d'ombre venant de la nav*/
+}

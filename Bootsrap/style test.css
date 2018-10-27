@@ -1,0 +1,10 @@
+body {
+    width:90%;
+    margin:auto;
+}
+
+.btn {
+    color:rgb(31, 173, 216);
+    border: 1px solid rgb(31, 173, 216);
+}
+

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jeu de devinette</title>
+</head>
+
+<body>
+    <h1>Nombre magique :</h1>
+    <ol>
+        <li>message de bienvenue sur la console</li>
+        <li>générer un nombre aléatoire entre 1 et 100</li>
+        <li>faire apparaitre une boite de saisie</li>
+        <li>Entrée de l'utilisateur d'un essai</li>
+        <li>Si le nombre est trouvé, le jeu s'arrête
+            <br />Sinon le programme indique si le nombre magique est plus petit ou plus grand que la saisie
+            <br />Si l'entrée n'est pas un nombre, un message d'erreur s'affiche</li>
+        <li>L'utilisateur à 6 essais, puis le jeu s'arrête et donne la solution.</li>
+    </ol>
+
+    <script>
+        //MA version
+
+        // console.log("Bienvenue dans ce jeu de devinette !");
+        // var solution = Math.floor(Math.random() * 100) + 1;
+        // console.log("(La solution est " + solution + ")");
+        // var devinette = String(prompt("Devinez le bon nombre !"));
+        // var essais = 0;
+        //     if(devinette < solution){
+        //     console.log("Le chiffre est plus grand");
+        //     prompt("Devinez le bon nombre. Celui là est trop petit !");
+        //     //essais++;
+        // } else if (devinette > solution){
+        //     console.log("Le chiffre est plus petit");
+        //     prompt("Devinez le bon nombre. Celui là est trop grand !");
+        //     //essais++;
+        // }else{
+        //     console.log("Nombre inconnu");
+        //     prompt("Devinez le bon nombre !");
+        // }
+
+
+        alert("Hello et bienvenue !");
+
+        //Cette ligne génère aléatoirement un nombre entre 1 et 100
+        var solution = Math.floor(Math.random() * 100) + 1;
+
+        //TEST pour mieux verifier le programme
+        console.log("(La solution est " + solution + ")");
+
+        for (var i = 1; i <= 6; i++) {
+
+            nbJoueur = parseInt(prompt("Le but du jeu est simple. Je pense à un nombre entre 0 et 100. A ton avis, quel est ce nombre ? Notes le dans la zone ci-dessous, tu as 6 essais."));
+
+            if (!isNaN(nbJoueur)) {
+                if (solution === nbJoueur) {
+                    alert("Bravo vous avez trouvé !");
+                    i = 6;
+                } else {
+                    if (solution < nbJoueur) {
+                        alert("Le nombre est plus petit, essai " + i + " sur 6");
+                    } else {
+                        alert("Le nombre est plus grand, essai " + i + " sur 6");
+                    }
+                }
+            } else {
+                alert("Vous n'avez pas saisi un nombre !");
+            }
+        }
+        alert("La bonne réponse est " + solution + ".");
+
+    </script>
+
+
+    <script src="19.js"></script>
+</body>
+
+</html>

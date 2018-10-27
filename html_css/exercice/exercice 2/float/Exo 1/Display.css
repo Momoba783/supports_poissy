@@ -1,0 +1,27 @@
+
+
+.clear{
+    clear: both;
+}
+.violet{
+    background: linear-gradient(to left,blue, #696969);
+    height: 10em;
+    width: 10em;
+    border-radius: 20% ;
+    margin: 0.2em;
+    float: left;
+    border: 0.2em solid;
+
+}
+.verte{
+    background: linear-gradient(to left,pink,#0db3f0);
+    height: 10em;
+    width: 10em;
+    border-radius: 20%;
+    margin: 0.2em;
+    float: left;
+    border: 0.2em solid;
+}
+.violet, .verte{
+    text-align: center;
+}

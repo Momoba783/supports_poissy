@@ -1,0 +1,39 @@
+table{
+    width:36em;
+    height:20em;
+    border:1px solid black;
+ }
+ 
+ .c1{
+   width: 5em;
+   height:15em;
+   border:1px solid black;
+   background-color:green;
+ }
+ #rouge{
+    width:35em;
+    height:3em;
+    border:1px solid black;
+    background-color:red;
+ }
+ #jaune{
+ 
+    height:3em;
+    border:1px solid black;
+    background-color: gold;
+  text-align: center;
+ 
+ 
+ }
+ 
+ #g,#d{
+    border:1px solid black;
+    height:20em;
+    width:4em;
+    background-color: blue;
+ 
+ }
+ *{
+    color:white;
+    text-align: center;
+ }

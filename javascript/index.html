@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Javascript</title>
+   <script src="script.js"></script>
+
+</head>
+<body>
+
+        <script>alert("Hello Word");
+                alert("Je suis dans le body")
+                //Toujours finir l'iscruction par un point virgule(;)
+               /*Commentaire sur plusieurs lignes*/
+             
+             //On déclare une varible sans valeur et on lui en affecte une valeur
+             
+             var nomDeLaVariable;
+             var nomDeLaVariable="Mohamed";//Type String
+             nomDeLaVariable='L\'école';
+             nomDeLaVariable="J'habite dans le \78";
+             console.log(nomDeLaVariable);
+             
+             //On déclare une variable et lui affecte directement une valeur
+             var X=25;
+             var x="Toto";
+             //console.log(X);
+             //console.log(x);
+             
+             //On déclare plusieurs valiables en même temps
+             var a="azerty", b=true, c=10.5;
+             //console.log(a+''+b+''+c);
+             
+             //On déclare une variable vide et on lui affecte une valeur
+             var z='';
+             z="Qwerty";
+             //console.log(z);
+             
+             
+             //var t=null;
+             //var u=NaN;
+             //var undefined;
+             //var tabs=[];
+             
+             //console.log(typeof(z));//Verifie le type de la variable
+             
+             var x=5,y=10,z=-2;
+             
+                //Addition
+             x=x+1;
+             x+=2;
+             
+                //Soustraction
+             x=x-2;
+             x-=2;
+             
+               //Multiplication
+             y=y*2;
+             y*=2;
+             var Multiplication=x*y;
+             //console.log(Multiplication);
+             
+                //Division
+             var Division=y/z;
+             y/=z
+             //console.log(Division);
+             
+               // Modulo
+               //le Modulo est le reste de la divition
+                var Modulo=13%3;
+                //13%=3;
+                //Dans cette opperation: 13 par 3 = 4-3 = 1; le Modulo est de 1. Il s'agit  du reste de la division entière d'un nombre par un autre.
+             
+             
+                var priority= x + y / (4+z) % 3;
+                //console.log(priority);
+                //console.log(a+''+b+''+c)
+             
+                var prenom="Mohamed",
+                espace= '',
+                age= 32;
+                var moi= prenom+espace+age;
+                alert(moi);
+             
+             
+             /*
+                == est égal à -> 10 - "10";
+                != est différent de -> 12!="2";
+                === est égal à(en valeur et en type) -> 10 -10;
+                !== est différent de (en valeur et en type) 10 !== 9;
+                < strictement inferieur
+                > strictement supérieur
+                <= est inférieur ou égal
+                >= est supérieur ou égal
+             
+                Exo: Effectuer une caparison des variables x et y ou x = 4 et y ="4" pour chaque comparateur,
+                renvoyé les tous dans un alert().*/
+             
+             var x=4,
+             y="4",
+             vrai= x<y,
+             vrai2= x>y,
+             faux= x>=y,
+             faux2= x<=y,
+             egal= x==y,
+             egalValType= x===y,
+             diff=x!=y,
+             diffValType= x!==y;
+             alert(vrai + "\n"+faux+"\n"+ vrai2+"\n"+ faux2+"\n"+egal+"\n"+egalValType+"\n"+diff+"\n"+diffValType)//\n= retour a la ligne
+             
+             //Les conditions//
+             /*Si
+             if(condition){
+                 code à executer si la condition est vérifiée
+             } 
+             Sinon si...
+             else if(autre condition){
+                 code à executer si l'autre condition est vérifiée
+             } 
+             Sinon...
+             else{
+                 code à executer si aucune condition n'est vérifiée
+             }*/ 
+             
+             /*EXEMPLE
+             var heure=12.33;
+             if(heure<11){
+                 alert("il est midi!!");
+             }
+             else if(heure=="12.33"&&heure===12.33){
+                 alert("je suis dans la deuxième condition");
+             }
+             else if(heure=="12.33"||heure===12.33){
+                 alert("je suis dans la troisième condition");
+             }
+             else {
+                 alert("fin de la condition");
+             }*/
+             
+             /*var heure=12.33;
+             if(heure<15){
+                 if(typeof(heure)=="number"){
+                     alert("Je suis dans le if imbriqué");
+                 }
+                 alert("il est midi !!");
+             }*/
+             
+             //Exo : Créer une condition que si var x est un nombre, qu'il est inférieur ou égal à 10, qu'il est du même type que y alors on fait une alerte qui renvoie un message quelconque//
+             
+             var x=1;
+             var y=1;
+             if(x<=10 && x === y){
+                 if(typeof(x)=="number");
+                 alert("Je suis inférieur ou égal a 10 et du même type que y");
+             }
+             
+             else {
+                 alert("on envoie un message quelconque");
+             }
+             
+             /*&& - opérateur AND(et)
+             || - opérateur OR (ou)
+             ! - opérateur NOT (non)
+             
+             if(!$_POST){
+             
+             }*/
+             
+             /*Exo : créer une variable heure comme suit : var heure=Number(prompt)
+             ("Entrez une valeur comprise entre 0 et 24.")
+             Créer une condition que si heure se situe entre 0 et 12 renvoi une alerte "C'est le matin", si elle se situe entre 12 et 17 "C'est l'après-midi", entre 17 et 24 "c'est le soir".*/
+             
+             var heure=Number(prompt("Entrez une valeur comprise entre 0 et 24."));
+             if(heure>=0 && heure<=12){
+                 alert("c'est le matin");
+             }
+             else if(heure>12 && heure<=17){
+                 alert("c'est l'après-midi");
+             }
+             else if(heure>17 && heure<=  24){
+                 alert("c'est le soir");
+             }
+             else {
+                 alert("fin de la condition");
+             }
+
+
+            /*LE SWITCH
+            Switch est semblable à une condition à la différence que celui-ci ne peut tester que l'égalité des valeurs*/
+
+            switch(heure){
+                case 8:
+                alert("Il est 8h")
+                break;
+                case 9:
+                alert("Il est 9h")
+                break;
+                case 10:
+                alert("Il est 10h")
+                break;
+                case 11:
+                alert("Il est 11h")
+                break;
+                case 12:
+                alert("Il est 12h")
+                break;
+                default:
+                alert("Error!!");
+            }
+
+
+//EXO 1//
+            var nom ="Ba";
+            var prénom ="Mohamed"
+            alert("Bonjour, je m'appelle" + nom + " " + prénom);
+
+
+//EXO 2//
+            var nom, prénom = prompt("Veuillez indiquer votre nom");
+            var prénom = prompt("Veuillez indiquer votre prénom");
+            alert("Bonjour, je m'appelle" + nom + " " + prénom);
+            
+        
+
+
+//EXO 3//
+            var x = 1;
+            var y = 5;
+            var somme = x + y;
+            alert("La somme de " + x + " " + y + " " + " est " + somme);
+
+
+//EXO 4//
+
+            var x = Number(prompt("Quelle est la valeur numérique de x ?"));
+            var y = Number(prompt("Quelle est la valeur numérique de y ?")),
+            resultat = x + y;
+            alert (resultat);
+
+
+
+//EXO 5//
+
+            var différence = x - y;
+            var somme = x + y;
+            var produit = x * y;
+            var quotient = x / y;
+            alert ("La somme" + " " + x + " et de " + y + " " + " est " + somme + 
+            "\nLa différence" + " " + x + " et de " + y + " " + " est " + différence + 
+            "\nLe produit" + " " + x + " et de " + y + " " + " est " + produit + 
+            "\nLe quotient" + " " + x + " et de " + y + " " + " est " + quotient);
+
+            
+            
+
+
+//EXO 6//
+            var nombre1 = Number(prompt("entrez une note")),
+            var nombre2 = Number(prompt("entrez une note")),
+            var nombre3 = Number(prompt("entrez une note")),
+            moyenne = (nombre1 + nombre2 +nombre3)/3;
+            alert(moyenne);
+
+
+
+//EXO 7//
+            var mois = Number(prompt("Entrez un mois en chiffre"));
+            var année = Number(prompt ("Entrez l'année"));
+            switch(mois) {
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12: j = 31; break;
+                case 4: case 6: case 9: case 11: j=30; break;
+                case 2: if(année%4==0){
+                    j=29;
+                } else {
+                    j=28;
+                }
+                break;
+            }
+            alert(" Le mois de " + mois + " à " + j);
+
+
+
+//EXO 8//
+            
+            var n = Number(prompt("saisir un entier"));
+
+
+
+
+
+
+
+             
+</script>
+
+</body>
+</html>

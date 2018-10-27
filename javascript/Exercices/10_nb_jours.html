@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nombre de jours du mois </title>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<h1>Nombre de jours du mois </h1>
+
+	<p>Ecrivez un programmenombre_jours.jsqui fait saisir le numéro d'un mois (nombre entre 1 et 12) puis affiche le nombre de jours de ce mois.</p>
+	<p>On ne tiendra pas compte des années bissextiles.</p>
+	<p>Les erreurs de saisie doivent être gérées.</p>
+
+	<h3>Résultat :</h3>
+
+	<script>
+				var mois = Number(prompt("Entrez un mois en chiffre"))
+switch (mois) {
+    case 1: "janvier"
+    case 3: "mars"
+    case 5: "mai"
+    case 7: "juillet"
+    case 8: "aout"
+    case 10: "octobre"
+    case 12: "decembre"
+        alert("Ce mois comporte 31 jours.");
+        break;
+    case 4: "avril"
+    case 6: "juin"
+    case 9: "septembre"
+    case 11: "novembre"
+        alert("Ce mois comporte 30 jours.");
+        break;
+    case 2: "février"
+        alert("Ce mois comporte 28 jours.");
+        break;
+    default:
+        alert("Mois inconnu au bataillon !");
+    }
+		</script>
+
+
+
+
+
+
+<script type="text/javascript" src="10.js" ></script>
+</body>
+</html>

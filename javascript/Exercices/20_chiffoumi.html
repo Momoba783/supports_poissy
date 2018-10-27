@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chiffoumi !</h1>
+    <h3>Enoncé</h3>
+    <p>L'utilisateur choisit dans un prompt du navigateur pierre, feuille ou ciseau, l'ordinateur choisit aléatoirement
+        l'une des trois possibilités, et la partie commence !</p>
+    <h3>Remarques</h3>
+    <ul>
+        <li>On doit pouvoir indifféremment saisir le mot en minuscules comme en majuscules.</li>
+        <li>Le ciseau est écrasé par la pierre.</li>
+        <li>La feuille est découpée par le ciseau.</li>
+        <li>La pierre est enveloppée par la feuille.</li>
+        <li>Si le joueur et l'ordinateur font le même choix on obtient une égalité.</li>
+    </ul>
+
+
+    <script>
+        //         //Exercice 20
+        // alert("Hello et bienvenue dans cette partie de Chiffoumi !")
+        // var chifoumi = String (prompt("Veuillez choisir : Pierre ? Feuille ? ou Ciseaux ?"));
+
+        // //var ordi =  Math.floor(Math.random() * 3);
+
+
+        // var ordi =  Math.floor(Math.random() * 15);
+        // console.log(ordi);
+        // if(ordi < 5){
+        //    ordi = "Pierre";
+        //    console.log(ordi);
+        // }else if(ordi >= 5 && ordi <= 10){
+        //    ordi = "Ciseaux";
+        //    console.log(ordi);
+        // }else if(ordi > 10){
+        //    ordi="Feuile";
+        //    console.log(ordi);
+        // }
+
+        // if(chifoumi == "Pierre" || chifoumi == "pierre" || chifoumi == "PIERRE"){
+        //    chifoumi = "Pierre";
+        //    console.log(chifoumi);
+        // }else if(chifoumi == "feuille" || chifoumi == "Feuille" || chifoumi == "FEUILLE"){
+        //    chifoumi = "Feuille";
+        //    console.log(chifoumi);
+        // }else if(chifoumi == "ciseaux" || chifoumi == "Ciseaux" || chifoumi == "CISEAUX"){
+        //    chifoumi = "Ciseaux";
+        //    console.log(chifoumi);
+        // }else{
+        //    alert("Erreur");
+        // }
+
+        // if(ordi == chifoumi){
+        //    alert("Egalité !")
+        // }else if(ordi == "Ciseaux" && chifoumi == "Pierre" || ordi == "Pierre" && chifoumi == "Feuille" || ordi == "Feuille" && chifoumi == "Ciseaux"){
+        //    alert("Gagné !")
+        // }else if(chifoumi == "Feuille" && ordi == "Ciseaux" || chifoumi == "Pierre" && ordi == "Feuille" || chifoumi == "Ciseaux" && ordi == "Pierre"){
+        //    alert("Perdu !")
+
+        // }for(i = 0; i <= 4; i++){
+        //    var findujeu = 0;
+        //    findujeu++;
+        //    if(findujeu >= 4){
+        //        alert("Le jeu est fini !")
+        //    }
+        // }
+
+
+        var computer;
+        var player;
+        var random;
+
+        //Récuperation du choix du joueur
+        player = window.prompt("Que choisissez-vous : pierre, feuille ou ciseau ?");
+
+        //Récupération d'un nombre aleatoire entre 0 et 1 inclus
+        random = Math.random();
+
+        //Test du random
+        console.log(random);
+
+        if (random <= 0.33) {
+            computer = 'pierre';
+        }
+        else if (random <= 0.66) {
+            computer = 'feuille';
+        }
+        else {
+            computer = 'ciseau'
+        }
+
+        document.write("<p>Choix de l'ordinateur : " + computer + '</p>');
+
+        if (computer == player) {
+            document.write('<p>Vous avez choisi la même chose : égalité !</p>');
+        }
+        else {
+            // le joueur et l'ordinateur n'ont pas choisi la même chose la bataille commence !
+            switch (computer) {
+                case 'ciseau':
+                    if (player == 'pierre') {
+                        document.write("<p> La pierre écrase le ciseau : vous gagnez !</p>")
+                    }
+                    else // player == 'feuille'
+                    {
+                        document.write("<p> La feuille est découpée par le ciseau : vous perdez !</p>")
+                    }
+                    break;
+
+                case 'pierre':
+                    if (player == 'feuille') {
+                        document.write("<p> La feuille envellope la pierre : vous gagnez !</p>")
+                    }
+                    else // player == 'ciseau'
+                    {
+                        document.write("<p> le ciseau est écrasé par la pierre : vous perdez !</p>")
+                    }
+                    break;
+
+                case 'feuille':
+                    if (player == 'pierre') {
+                        document.write("<p> La pierre est envellopée par la feuille : vous perdez ! !</p>")
+                    }
+                    else // player == 'ciseau'
+                    {
+                        document.write("<p> le ciseau découpe la feuille : vous gagnez !</p>")
+                    }
+                    break;
+            }
+        }
+    </script>
+
+
+    <script type="text/javascript" src="20.js"></script>
+</body>
+
+</html>

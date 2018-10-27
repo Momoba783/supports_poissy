@@ -1,0 +1,112 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background: #DDEEAA;/*ou #dea en raccourci*/
+}
+
+div#conteneur{
+    width: 770px;/*largeur*/
+    margin: 0 auto;/*marge automatique qui centre le bloc après l'avoir remonté le plus haut possible dans mon affichage*/
+    text-align: left;/*centre le contenu de mon #conteneur*/
+    border: 2px solid #AABB44;/*bordure autour de toute la page*/
+    background: #fff;/*couleur du fond de mon #conteneur*/
+}
+
+h1#header{
+    height: 258px;/*personnaliser la hauteur de mon titre*/
+    background: url(../../img/apple.jpg) no-repeat left top;
+    margin: 0;
+    }
+
+    h1#header a{/*On donne les mêmes dimensions au lien, chose possible grâce à la propriété display: block; qui transforme le lien en élément de type block, auquel on peut donner des propriétés de taille. On met aussi l'image de fond qui a les mêmes dimensions que le cadre ainsi créé*/
+    	width: 400px;
+    	height: 70px;
+    	display: block;
+    	background: url(../../img/title.gif) no-repeat;
+    	position: relative;
+    	left: 350px;
+    	top: 15px;
+    	text-indent: -5000px;/*Le text-indent négatif est fait pour pouvoir ne cacher le texte hors de la page, ce que nous voulons.*/
+    }
+
+ul#menu    {
+	height: 35px ;/*On donne une hauteur au menu, correspondant à la taille de l'image utilisée en fond*/
+	margin: 0 ;
+	padding: 0 ;
+	background: url(../../img/bg_menu.gif) repeat-x 0 -25px ;/*, on met ensuite l'image de fond avec un décalage de 25 pixels vers le haut*/
+	list-style-type: none;/*on cache les puces*/
+    }
+    ul#menu li{
+    	float: left ;/*On rend les li en flottant pour pouvoir les afficher horizontalement*/
+    	text-align: center ;/*on centre le texte*/
+        }
+        ul#menu li a{/*C'est sur les liens que le gros du travail est effectué*/
+        	width: 130px ;/*largeur*/
+        	line-height: 25px ;/*hauteur de ligne*/
+        	font-size: 1.2em ;/*taille de police*/
+        	font-weight: bold ;/*mise en accentuation gras/bold de la police*/
+        	letter-spacing: 2px ;/*espacement des lettres*/
+        	color: #fff ;/*couleur du texte (de la police)*/
+        	display: block ;/*Nous pouvons dimensionner les a grâce à la propriété display: block;*/
+        	text-decoration: none ;/*décoration du texte*/
+        	border-right: 2px solid #dea ;/*bordure*/
+            }
+            ul#menu li a:hover{/*on décale l'image de fond au passage de la souris pour laisser aparaître l'état survolé de l'image*/
+                background: url(../../img/bg_menu.gif) repeat-x 0 0 ;
+            }
+
+            /*@formateur
+            FIN 3
+            */
+
+/*@formateur
+2
+*/
+div#contenu{
+    padding: 0 30px 0 100px;
+    background-image: url(../../img/bg_page.gif);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;/*crée un espace àgauche et à droite de l'image*/
+    }
+    /*@formateur
+    on rajoute des détails sur la façon de coder plus simplement: background-image ne prend que l'url, background est beaucoup plus large dans ses réglages...*/
+    div#contenu h2{/*Mise en forme du titre de page <h2>*/
+    	padding-left: 25px;/*on décale le texte en fonction de l'image*/
+    	line-height: 25px;/*on décale le texte en fonction de l'image avec un interligne*/
+    	font-size: 1.4em;/*on précise une taille de police*/
+    	background: url(../../img/little_apple.gif) no-repeat left bottom;/* une petite image*/
+    	color: #9b2;/*couleur au texte*/
+    	border-bottom: 1px solid #9b2;/*bordure du bas avec couleur*/
+    }
+
+    div#contenu h3{/*pareil que pour le titre h2, à ceci près qu'on ne donne pas d'image décorative*/
+    	margin-left: 15px ;
+    	padding-left: 5px ;
+    	border-bottom: 1px solid #9b2 ;
+    	border-left: 3px solid #9b2 ;
+    	color: #9b2 ;
+    }
+
+    div#contenu p{/*paragraphes plus propres*/
+    	text-align: justify ;/*alignement justifié*/
+    	text-indent: 2em ;/*indentation supérieure à l'état normal pour aérer le tout*/
+    	line-height: 1.7em ;/*hauteur de ligne supérieure à l'état normal pour aérer le tout*/
+    }
+
+    div#contenu a{/*mise en forme des liens de la page*/
+    	color: #8a0 ;
+            }
+        div#contenu a:hover
+        {
+        	color: #9b2 ;
+        }
+
+p#footer{/*pied/footer de la page*/
+	margin: 0 ;
+	padding-right: 10px ;
+	line-height: 30px ;
+	text-align: right ;
+	color: #8a0 ;
+}

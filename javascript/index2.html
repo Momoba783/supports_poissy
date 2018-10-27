@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les boucles</title>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- <h1>La boucle while</h1>
+
+    La boucle while va nous permettre de répéter une série d'action tant qu'une condition est vraie.
+
+
+    <script>
+       var x = 0;
+       while(x < 10){
+           jourFr=' x contient la valeur ' + x);
+           //x++;  Equivaut à x = x + 1 - Incrémentation//
+           //x-- Equivaut à x = x - 1 - Décrementation//
+       }
+
+    </script>
+
+       <h1>La boucle do..while</h1>
+
+       <script>
+        var x = 100;
+        do{
+           jourFr=" x contient la valeur " + x) 
+       } while(x < 10)
+       </script>
+
+       <h1>La boucle for</h1>
+
+       Elle nous permet de répéter une série d'instructions à partir d'une valeur donnée jusqu'à une certaine valeur seuil
+
+       <script>
+           for(i = 0; i < 10; i++){
+               jourFr=" i contient la valeur " i)
+           }
+       
+       </script>
+        
+        <h1>La fonction</h1>
+
+        C'est un bloc de code qui va éxecuter une tâche précise.
+
+        <script>
+            function multiplication(x, y){
+                //Le code de la tâche à réaliser
+                //jourFr=x * y);
+                return x * y;
+            }
+
+
+            var resultat = multiplication(5,10);
+            resultat += 2;
+            jourFr=resultat);
+        </script> -->
+
+    Ecrire une fonction simple qui au clique sur un bouton lance la fonction. Cette fonction demande la saisie d'une
+    largeur, d'une longuer et affiche la surface du rectangle correspondant
+    <script>
+        function surface() {
+            var longeur = prompt('Longeur');
+            var largeur = prompt('Largeur');
+            return alert("La longueur de votre rectangle est de " + longeur + " et la largeur est de " + largeur + "pour une surface " + longeur * largeur);
+        }
+    </script>
+    <p><button onclick="surface()">Lancer la fonction</button></p>
+    1. Créez une fonction qui demande la saisie d'un rayon, retourne la surface du cercle de ce rayon
+    2. Affichez le résultat de l'appel à cette fonction en cliquant sur le bouton.<br>
+    <script>
+        function rayon() {
+            var rayon = Number(prompt("Entrer un rayon"));
+            alert(rayon * rayon * 3.14);
+        }
+    </script>
+    <button onclick="rayon()">Surface cercle</button><br>
+    1. Créez deux variables globales a et b, initialisées respectivement à 3 et à 2.
+    2. Créez une fonction multiplie prenant un argument x prenant comme valeur par défaut 8, et renvoyant le résultat
+    de la multiplication de x par 3
+    3. Créez une fonction affiche, appelée au clic sur le bouton, qui affiche dans des boîtes d'alerte successivement
+    le résultat de multiplie appliquée a, à b, puis sans aucun paramètre (en exécutant donc la fonction avec la valeur
+    de x par défaut)
+    <script>
+        var a = 3, b = 2;
+        function multiplie(x = 8) {
+            if (x == "undefined") {
+                return 24;
+            }
+            return x * a;
+        }
+        function affiche() {
+            alert(multiplie() * a);
+            alert(multiplie() * b);
+            alert(multiplie());
+        }
+    </script>
+    <button onclick="affiche()">Affiche</button><br>
+    1. Au click sur le premier bouton, lancez la fonction boucle() crée un tableau de 3 éléments et utilise une boucle
+    for pour le remplir de sorte que l'élément i du tableau contienne i².
+    <script>
+        function boucle() {
+            var t = new Array(5);
+            for (i = 0; i < t.length; i++) {
+                t[i] = i * i;
+            }
+            alert(t);
+        }
+    </script>
+    <button onclick="boucle()">Boucle 1</button><br>
+    2.Au click sur le second bouton, lancez la fonction boucle2() qui demande à l'utilisateur via un prompt de saisir
+    la longueur souhaitée du tableau, puis crée ce tableau et utilise une boucle for pour le remplir de sorte que
+    l'élément i du tableau contienne i². Affichez le tableau dans une boîte d'alerte.
+    <script>
+        function boucle2() {
+            var longueur = Number(prompt("Quelle est la longueur du tableau"));
+            var t = new Array(); // On utilise le constructeur "new" pour créé un objet Tableau(Array)
+            for (i = 0; i < longueur; i++) {
+                t[i] = i * i;
+            }
+            alert(t);
+        }
+    </script>
+    <button onclick="boucle2()">Boucle 2</button><br>
+    Au click sur le bouton, lancer la fonction jourDeLaSemaine(). Cette fonction détermine le jour de la semaine et
+    affiche selon le cas dimanche, lundi, mardi... etc. jusqu'à samedi
+    <script>
+        function jour() {
+            var aujourdhui = new Date;// On utilise le constructeur "new" pour créé un objet Date
+            var jour = aujourdhui.getDay();
+            var jourFr;
+
+            switch (jour) {
+                case 0: jourFr = "Dimanche"; break;
+                case 1: jourFr = "Lundi"; break;
+                case 2: jourFr = "Mardi"; break;
+                case 3: jourFr = "Mercredi"; break;
+                case 4: jourFr = "Jeudi"; break;
+                case 5: jourFr = "Vendredi"; break;
+                case 6: jourFr = "Samedi"; break;
+                default: jourFr = "Erreur"; break;
+            }
+            alert("Nous sommes " + jourFr);
+        }
+    </script>
+    <button onclick="jour()">Jour</button>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+body{
+  margin: 0 auto;
+  background-color: antiqueWhite;
+}
+div{
+  width: 90%;
+  margin: 0 auto;
+  background-color: lightSteelBlue;
+}
+.boîte{
+  height: 11vh;
+  width: 5vh;
+  padding: 5vh;
+  background: url('../img/images_herisson.jpg');
+  background-repeat: no-repeat;
+  border: 5px double purple; /*taille, style, couleur de la bordure*/
+  margin: 2vh;
+  float: left;/* l'effet flottant, permet de placer les balises côte à côte
+alors le flux web standart les éléments sont les uns au dessus des autres.*/
+  transition: margin 0.5s;
+}
+.boîte:hover{
+margin-top: 10vh;
+  }
+  .clear{
+    clear:both;/*supprime l'effet flottant*/
+  }
+  p{
+    background-color: lightblue;
+
+  }
+  p span{/*selectionne les span contenus dans des p */
+    background-color: yellow;
+  }

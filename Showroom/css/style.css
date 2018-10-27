@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to top, #b6da4a,rgb(255, 187, 0),#c56161);
+}
+
+section {
+    width:70%;
+    background-color: #fff;
+    margin:auto;
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size:1.2em;
+    font-weight: bold;
+    color: green;
+    margin-top:10px;
+
+
+    
+}
+
+nav {
+    height:100px;
+    width:1140px;
+    position:fixed;
+    background-color: #c4d985;
+    z-index: 2;
+    margin-bottom: 50px; 
+    border-bottom: 3px solid rgb(209, 209, 209);
+}
+
+.nav-pills {
+    margin-top:20px;
+    
+}
+
+.nav-pills a{
+    color:#004e83;
+}
+
+.un {
+    background-color: #b6da4a;
+    border-color: #b6da4a;
+}
+
+.uno {
+    border: 1.7px solid #b6da4a;
+}
+
+
+
+.deux {
+    background-color: #c8655d;
+    border-color: #c8655d;
+}
+
+.dos {
+    border: 1.7px solid #c8655d;
+}
+
+
+.card {
+    text-align:center;
+}
+
+.card-text {
+    font-weight: bold;
+}
+
+.jumbotron {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+hr {
+    border: 1.5px solid #004e83;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+h3 {
+    margin-left:35px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    margin-bottom:30px;
+    margin-top:10px;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+
+ p.haut {
+    text-align: justify;
+    margin-left:55px;
+    margin-right:55px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:#004e83;
+    margin-top:40px;
+}
+
+ p.conférence {
+     text-align: justify;
+     margin-left:60px;
+     margin-right:60px;
+     margin-bottom:30px;
+     font-size: 1.2em;
+ }
+
+ .centrer {
+     margin-left:30px;
+ }
+
+ #carousel{
+    width:1110px;
+    margin: auto;
+ }
+
+ .social {
+    float: right;
+    
+}
+
+.social p {
+    text-align: center;
+}
+
+.social li {
+    float: right;
+    margin: 0 10px;
+    font-size: 1.4rem;
+}
+
+footer ul {
+    margin-left:300px;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #004e83;
+    
+}
+
+.col-6 a{
+    color: #004e83;
+    margin-left:30px;
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+

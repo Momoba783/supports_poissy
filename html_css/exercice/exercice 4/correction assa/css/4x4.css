@@ -1,0 +1,69 @@
+body{
+    height: 90%;
+    width: 60%;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+    
+}
+
+header{
+    height: 4em;
+    width: 72em;
+    background: #C8AE81;
+}
+
+nav{
+    height: 1.5em;
+    background: #2F4747;
+
+}
+
+section{
+    background: #B1EBEC;
+}
+
+#table{
+    border: 2px white;
+    
+}
+
+.rose, .bleu, .blue, .orange{
+    height: 10em;
+    width: 25em;
+    border: 1px solid white;
+
+    
+}
+
+.rose{
+    background:  #F9D7B1;
+
+}
+
+.bleu{
+    background: #7794AA;
+}
+
+.blue{
+    background: #3E4F5C;
+}
+
+.orange{
+    background:  #F9DFAA;
+}
+
+.clear{
+    clear: both;
+}
+
+footer{
+    background: #B9B9B9;
+    height: 5em;
+}
+
+
+
+
+
+

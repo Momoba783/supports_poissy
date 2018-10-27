@@ -1,0 +1,123 @@
+#wrapper {
+    margin : auto;
+    width: 1200px;
+    font-family: Cormorant Garamond;
+}
+
+header {
+    line-height: 5px;
+}
+
+.row {
+    width:1200px;
+    margin-top: 50px;
+}
+
+#petit-color {
+    color:#cf884d;
+    text-align: center;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr.haut_bas {
+    margin-left:300px;
+    margin-right: 300px;
+}
+
+
+#menu {
+    text-align: center;
+    font-size: 1em;
+}
+
+#menu ul li{
+    text-decoration: none;
+    color:#000;
+}
+
+.text-haut {
+    text-align: right;
+    padding-top: 140px;
+    margin-right:120px;
+}
+
+.bold {
+    font-size: 1.3em;
+    font-style: italic
+}
+
+.gros {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+
+
+.model1{
+    width:1200px;
+    margin-top: 50px;
+}
+
+.mise-en-forme {
+    float:left;
+    width:500px;
+    font-size :1.6em;
+    padding-left:30px;
+    padding-right:30px;
+
+
+}
+
+p.note {
+    background-color: rgb(58, 58, 58);
+    color:#fff;
+    text-transform: uppercase;
+    
+}
+
+.model2 {
+    width:1200px;
+    margin-top:50px;
+}
+
+
+
+
+.img {
+    float:left;
+    width:500px;
+}
+
+
+.clear{
+    clear: both;
+}
+
+footer{
+    margin:auto;
+    text-align: center;
+    margin-top: 70px;
+    line-height: 5px;
+}
+
+.foot{
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.fin {
+    font-size: 1.5em;
+    font-style: italic;
+}

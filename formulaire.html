@@ -1,0 +1,87 @@
+<form method="post" action="" enctype="">
+<!--METHOD = comment circulent les données en php, ENCTYPE concerne la récupératiion des fichiers, ACTION est l'URL de destination des données-->
+
+    <label for=""></label>
+    <input type="text"id=""required>
+    <br>
+    <!--ID fait le lien avec le FOR du label en HTML le NAME est récupéré en php. ce type d' ID étant dans un formulaire il n'y a pas le soucis de limiter l'utilisation de l'attribut ID-->
+
+    <label for="mdp">mot de passe*</label>
+    <input type="password"id="mdp"name="mdp"required>
+    <br>
+
+    <label for="email">email*</label>
+    <!--*pour champ obligatoire REQUIRED dans l'input-->
+    <input type="email" id="email"name="email"placeholder="email"required>
+    <br>
+    <!--PLACHOLDER est le texte explicatif en grisé dans le champs non encore rempli-->
+
+    <label for="file">fichier *</label>
+    <input type="file"id="file" name="file">
+    <br>
+    <!--type FILE crée un bouton"parcourir"pour aller chercher un fichier-->
+
+    <label for=""></label>
+    <select id="" name="">
+        <!--liste déroulante avec SELECT et non INPUT-->
+        <optgroup label="">
+            <!--option groupe = sous-catégorie dans la liste-->
+            <option value=""></option>
+            <option value=""></option>
+        </optgroup>
+        <optgroup label="">
+            <!--option groupe = sous-catégorie dans la liste-->
+            <option value=""></option>
+            <option value=""></option>
+        </optgroup>
+    <select>
+    <br>
+ 
+    <label for="choisir">choisir</label>
+    <p>
+        <!-- cases à cocheer carrées, CHECKED en coche une par défaut-->
+        <input type ="checkbox" name="choix" checked>choix
+        <input type="checkbox" name="choix">choix2
+        <input type="checkbox" name="choix">choix3
+    </p>
+
+    <label for="civilite">civilite</label>
+    <p>
+        <!--cases à cocher rondes, CHECKED en code une par défaut et une seule peût-être choisie-->
+        <input type="radio" name="civilite" value="m"checked>homme
+        <input type="radio" name="civilite" value="f">femme
+    </p>
+
+    <label for="ville">ville</label>
+    <input type="text" id="ville" name="ville" list="france">
+    <datalist id="france">
+        <!--la datalist permet de suggérer lorsque l'utilisateur tape. Couplé avec du PHP pour aller faire un lien avec uns base de données-->
+        <option>Paris</option>
+        <option>Lyon</option>
+        <option>Marseilles</option>
+    </datalist>
+    <br>
+
+    <label for="cp">code postal</label>
+    <input type="text" id="id" name="id" name="" maxlength="5"pattern="[0-9]{5" maxlength="5"pattern="[0-9]{5">
+    <br>
+    <!--MAXLENGHT impose un max de caractères et PATTERN permet d'imposer le type de caractères numériques et comme PATTERN permet de préciser le nombre de caractères max, on peut enlever MAXLENGHT ici( on le garde pour les connaissances)-->
+    <label for="adress">adress</label>
+    <textarea id="adress" name="adress" rows="15" cols="25"></textarea>
+    <br>
+    <!--zone de texte avec les réglages de sa taille ROWS et COLS-->
+
+    <label for="jauge">jauge</label>
+    <input type="range"min="0" max="50" value="25" id="jauge">
+    <br>
+    <!--MIN et MEX correspondent à l'echelle et VALUE à la place du curseuer par défaut, ici au milieu-->
+
+    <label for="couleur">couleur{66:couleur}</label>
+    <input type="{67|color,text,password,email,file,checkbox,radio, range submit,reset|}">
+    <br>
+
+    <input type="submit" name="inscription" value="s'inscrire">
+    <input type="reset" name="efface" value="Recommencer">
+    <br>
+
+</form>

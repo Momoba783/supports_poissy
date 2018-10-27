@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ni oui ni non</title>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<h1>Ni oui ni non</h1>
+	<p>Ecrivez un programme oui_non.js qui fait jouer l'utilisateur au ni oui, ni non : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu.</p>
+
+
+	<script>
+
+var disMoi = "";
+var i = 0;
+
+while ((disMoi !== "oui") && (disMoi !== "non")){
+	disMoi = prompt("Alors on joue au Ni oui Ni non ?");
+	document.write(disMoi + " pour la " + i + "° fois, dis moi oui ou non ! <br />");
+	i++;
+}
+document.write("<h1 style='background-color:cyan; text-align:center;'>Fini ;-) !</h1>");
+
+	
+	</script>
+
+<script type="text/javascript" src="16.js" ></script>
+</body>
+</html>

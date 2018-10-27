@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heure suivante</title>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<h1>Heure suivante</h1>
+
+	<p>Ecrivez un programme qui demande une heure à un utilisateur sous la forme de trois informations (heures, minutes, secondes).</p>
+	<p>il affiche ensuite l'heure qu'il sera une seconde plus tard.</p>
+	<p>Les erreurs de saisie doivent être gérées.</p>
+	<ul style='border: 1px solid; background-color: lightgray'>Ce programme est moins simple qu'il en a l'air : >
+		<li>14h17m59s => 14h18m0s</li>
+		<li>6h59m59s => 7h0m0s</li>
+		<li>23h59m59s => 0h0m0s (minuit)</li>
+	</ul>
+
+	<h3>Résultat :</h3>
+
+	<script>
+		
+		var heure = prompt("Entrez l'heure :");
+var minute = prompt("Entrez les minutes :");
+var seconde = prompt("Entrez les secondes :");
+
+// on teste les cas d'erreur
+if ((heure >= 0) && (heure <= 23) && (minute >= 0) && (minute <= 59) && (seconde >= 0)
+&& (seconde <=59)) { // &&
+   seconde++; // on incrémente les secondes
+   if (seconde === 60) { // ===
+       // on met les secondes à 0 et passe à la minute suivante
+       seconde = 0;
+       minute++;
+       if (minute === 60) { // ===
+           // on met les minutes à 0 et passe à l'heure suivante
+           minute = 0;
+           heure++;
+           if (heure === 24) { // ===
+               // l'heure suivante est minuit
+               heure = 0;
+           }
+       }
+   }
+   // affichage de l'heure, document.write c'est une méthode qui écrit le paramètre texte dans le document
+   document.write("<h3>Dans une seconde il sera " + heure + " h " + minute + " m " +
+       seconde + " s</h3>");
+} else {
+   // heure incorrecte
+   document.write("Heure incorrecte !");
+}
+	
+	</script>
+<script type="text/javascript" src="11.js" ></script>
+</body>
+</html>

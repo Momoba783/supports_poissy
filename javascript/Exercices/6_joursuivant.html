@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jour Suivant</title>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<h1>Jour Suivant</h1>
+		<p>Ecrivez un programme jour_suivant.js qui fait saisir un nom de jour de la semaine à l'utilisateur, puis affiche le nom du jour suivant.</p>
+		<p>Les erreurs de saisie (jour incorrect) doivent être gérées.</p>
+		<p>Effectuez l'exercice avec des if/if else puis avec un switch.</p>
+
+		<script>
+
+
+var jour = String (prompt("Entrez un jour de la semaine"));
+//Avec conditions
+if (jour === "lundi") {
+    alert("Demain, on est mardi !");
+} else if (jour === "mardi") {
+    alert("Demain, on est mercredi !");
+} else if (jour === "mercredi") {
+    alert("Demain, on est jeudi !");
+} else if (jour === "jeudi") {
+    alert("Demain, on est vendredi !");
+} else if (jour === "vendredi") {
+    alert("Demain, on est samedi !");
+} else if (jour === "samedi") {
+    alert("Demain, on est dimanche !");
+} else if (jour === "dimanche") {
+    alert("Demain, on est lundi !");
+} else {
+    alert("Jour inconnu au bataillon !");
+}
+
+//Avec switch
+switch (jour) {
+    case "lundi":
+        console.log("Demain, on est mardi !");
+    break;
+    case "mardi":
+        console.log("Demain, on est mercredi !");
+    break;
+    case "mercredi":
+        console.log("Demain, on est jeudi !");
+    break;
+    case "jeudi":
+        console.log("Demain, on est vendredi !");
+    break;
+    case "vendredi":
+        console.log("Demain, on est samedi !");
+    break;
+    case "samedi":
+        console.log("Demain, on est dimanche !");
+    break;
+    case "dimanche":
+        console.log("Demain, on est lundi !");
+    break;
+    default:
+        console.log("Jour inconnu au bataillon !");
+    }
+		
+		</script>
+
+<script type="text/javascript" src="06.js" ></script>
+</body>
+</html>

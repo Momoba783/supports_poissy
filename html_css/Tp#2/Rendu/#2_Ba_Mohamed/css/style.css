@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush|Francois+One");
+
+body{
+    background-color: rgb(53, 52, 52);
+}
+
+#wrapper {
+    margin : auto;
+    width:1200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+}
+
+header {
+    height:600px;
+    background-image: url("../pics/woddPlank.jpg");
+    background-repeat: repeat;
+}
+
+nav ul {
+    padding-right: 30px;
+}
+
+nav ul li{
+    margin : 50px 20px;
+    text-transform: uppercase;
+    font-family: 'Caveat Brush', cursive;
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+h4 {
+    font-family: 'Caveat Brush', cursive;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    float:left;
+    margin : 50px 0 0 50px;
+}
+
+.logo {
+    
+}
+
+#cerf {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.material-icons{
+    margin-left:550px;
+}
+
+
+section {
+    width:1200px;
+}
+
+.bloc1 {
+    width : 400px;
+    float:left;
+}
+
+h1 {
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.petite_img {
+    margin-top:100px;
+    margin-left:80px;
+    margin-bottom: 20px;
+}
+
+.petite_img2{
+    margin-left:105px;
+    margin-top: 70px;
+    
+}
+
+.img_right {
+    width:800px;
+    float: left;
+
+}
+
+.img_left{
+    width:850px;
+    float:left;
+}
+
+.hr1{
+    margin-left: 185px;
+    margin-right:185px;
+    border:5px solid rgb(207, 38, 207);
+    margin-bottom: 30px;
+}
+
+h3{
+    text-transform: uppercase;
+    color: rgb(207, 38, 207);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.7em;
+}
+
+.bloc2 {
+    width:350px;
+    float:left;
+}
+
+
+p{
+    text-align: center;
+    font-size: 0.9em;
+    margin:0 40px;
+}
+
+h3 {
+    color :
+}
+
+#un {
+    margin-top: 130px;
+    margin-bottom:20px;
+}
+
+#deux, #trois {
+    margin-bottom:20px;
+}
+
+
+
+.hr2 {
+    margin-left: 160px;
+    margin-right:160px;
+    border:5px solid rgb(207, 38, 207);
+    margin-bottom: 30px;
+}
+
+.hr3 {
+    border:5px solid rgb(207, 38, 207);
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+
+    background-image: url(../pics/pattern.jpg);
+    background-repeat: repeat;    
+    height:400px;
+}
+
+#gauche {
+    float:left;
+    width:50%;
+}
+
+#droite {
+    float:left;
+    width:50%;
+    margin-top: 250px;
+}
+
+#droite ul li {
+    display :inline-block;
+    color:rgb(207, 38, 207);
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.bas{
+    font-family: 'Caveat Brush', cursive;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    
+}

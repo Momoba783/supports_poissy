@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu de navigation et propriétés CSS</title>
+    <meta name="author" content="Mohamed Ba">
+    <meta name="description" content="cours selecteurs">
+    <link rel="stylesheet" href="css/11_selecteurs.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="https://openclassrooms.com/fr/" target="_blank">OpenClassRoom</a>
+        <a href="https://www.developpez.com/" target="_blank">Developpez.com</a>
+        <a href="https://developer.mozilla.org/fr/" target="_blank">Developper</a>
+        <a href="http://outils-web.fr" target="_blank">Outils Web</a>
+        <a href="https://www.fun-mooc.fr/" target="_blank">Fun Mooc</a>
+    </nav>
+    <br />
+    <section class="container">
+        <h3>
+            Aide Mémoire des sélecteurs CSS déjà vus
+        </h3>
+        <ul>
+            <li>
+                <mark>*</mark>Sélectionne TOUS les éléments de la page html</li>
+            <li>
+                <mark>.ma-jolie-nav</mark> séléctionne tous les éléments ayant le nom de la class "ma-jolie-nav"</li>
+            <li>
+                <mark>#mon-unique-id</mark> sélectionne tous les éléments ayant le nom de mon id "mon-unique-id"</li>
+            <li>
+                <mark>div, article, aside</mark> sélectionne toutes les balises &lt;div>, &lt;article> ET &lt;aside></li>
+            <li>
+                <mark>nav a</mark> sélectionne les liens &lt;a> inclus/imbriqués dans la balise &lt;nav></li>
+            <li>nav a
+                <mark>:hover</mark> sélectionne tous les liens de la nav et active une animation lors du survol de la souris</li>
+        </ul>
+    </section>
+
+    <div class="container1">
+        <section class="container2">
+            <h3>Propriétés CSS utilisées dans cette page</h3>
+            <h4>Décrivez leurs usages et leurs valeurs possibles</h4>
+            <ol>
+                <li>background : couleur de fond de l'élément</li>
+                <li>color: couleur de la police</li>
+                <li>float : effet flotant</li>
+                <li>font-family : police</li>
+                <li>font-size : taille de la police</li>
+                <li>height : hauteur de l'élement</li>
+                <li>left : position à partir de la gauche de la fenêtre</li>
+                <li>margin : marges exterieurs</li>
+                <li>padding : marges interieures</li>
+                <li>position : position de l'élément dans la page (on a utilisé que la valeur (fixed) pour l'instant</li>
+                <li>text-align: alignement du texte</li>
+                <li>text-decoration: changement des valeurs héritées (ici le souligné est standard pour les liens sous tous les
+                    navigateurs est supprimé)</li>
+                <li>top : position à partir du haut de la fenêtre</li>
+                <li>transition : temps de transition lors d'une animation (ici sur les liens de la barre de menus)</li>
+                <li>width: largeur de l'élément par rapport à la taille de la fenêtre si on indique une valeur relative (%, .em,
+                    etc)</li>
+            </ol>
+        </section>
+
+        <section class="container3">
+            <h3>Propriétés CSS à rechercher</h3>
+            <h4>Recherchez les propriétés ci-dessous, faites des tests avec sur cette page depuis la console de débuggage pour
+                tester les valeurs qu'elles peuvent prendre</h4>
+            <ol>
+                <li>font-weight:</li>
+                <li>letter-spacing:</li>
+                <li>word-spacing:</li>
+                <li>text-shadow:</li>
+                <li>background-image:</li>
+                <li>background-size:</li>
+                <li>opacity:</li>
+                <li>box-shadow:</li>
+                <li>list-style-image:</li>
+                <li>border:</li>
+                <li>border-radius:</li>
+                <li>border-width:</li>
+                <li>font-variant:</li>
+                <li>background-color:</li>
+                <li>!important :</li>
+            </ol>
+        </section>
+        <div class="clear"></div>
+    </div>
+    <!--fin du container-->
+    <section class="container container4">
+        <h3>Pour aller plus loin en CSS, quelques pistes...</h3>
+        <ul>        
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN le site officiel</a></li>
+                <li><a href="https://tympanus.net/codrops/">Codrops, références, tutos...</a></li>
+                <li><a href="https://flukeout.github.io/">Jeu avec les sélecteurs CSS</a></li>
+                <li><a href="http://flexboxfroggy.com/">Un autre jeu sur le système des "Flexbox"</a></li>
+                <li><a href="http://viewportsizes.com/">Différentes tailles d'écrans</a></li>
+                <li><a href="http://fr.learnlayout.com/">Tutos simples en français</a></li>
+                <li><a href="https://purecss.io">Encore des tutos</a></li>
+                <li><a href="https://www.w3c.org/Style/CSS/learning">Le site du W3C (partie CSS)</a></li>
+            </ul>
+        </section>
+
+
+
+
+</body>
+
+</html>
